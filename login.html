@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/page.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sidebar p-relative p-20">
+            <h3 class="p-relative">Khalil <br>Web</h3>
+            <ul>
+                <li>
+                    <a href="index.html" class="d-flex p-10 fs-14" title="Dashboard">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="d-flex p-10 fs-14" title="Settings">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="d-flex p-10 fs-14" title="Profile">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" class="d-flex p-10 fs-14" title="Projects">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="active d-flex p-10 fs-14" title="Courses">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html" class="d-flex p-10 fs-14" title="Friends">
+                        <i class="fa-solid fa-users fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html" class="d-flex p-10 fs-14" title="Files">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="d-flex p-10 fs-14" title="Plans">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="over-flow content w-full">
+            <header class="d-flex p-20">
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                </div>
+            </header>
+            <h1 id="title">Login</h1>
+            <div class="login-page">
+                <div class="login-wrapper bg-white shadow p-relative br-10">
+                    <div class="form-box login">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span><i class="fa-solid fa-envelope"></i></span>
+                                <input type="email" required>
+                                <label class="eml">Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="password-icon"><i class="fa-solid fa-eye-slash"></i></span>
+                                <input id="password" type="password" required>
+                                <label class="pass">password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label>
+                                    <input type="checkbox">
+                                    Remember me
+                                </label>
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                            <div class="login-register">
+                                <p>Don't have an account?</p>
+                                <a class="register-link" href="#">Register</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-box register">
+                        <h2>Registration</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span><i class="fa-solid fa-user"></i></span>
+                                <input type="text" required>
+                                <label class="usr">Username</label>
+                            </div>
+                            <div class="input-box">
+                                <span><i class="fa-solid fa-envelope"></i></span>
+                                <input type="email" required>
+                                <label class="eml">Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon-password"><i class="fa-solid fa-eye-slash"></i></span>
+                                <input id="password-two" type="password" required>
+                                <label class="pass">password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label>
+                                    <input type="checkbox">
+                                    I agree to the terms & conditions
+                                </label>
+                            </div>
+                            <button type="submit" class="btn">Register</button>
+                            <div class="login-register">
+                                <p>Already have an account?</p>
+                                <a class="login-link" href="#">login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <script src="script.js"></script>
+</body>
+</html>

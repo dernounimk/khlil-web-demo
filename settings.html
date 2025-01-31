@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/page.css">
+    <title>Settings</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sidebar p-relative p-20">
+            <h3 class="p-relative">Khalil <br>Web</h3>
+            <ul>
+                <li>
+                    <a href="index.html" class="d-flex p-10 fs-14" title="Dashboard">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="active d-flex p-10 fs-14" title="Settings">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="d-flex p-10 fs-14" title="Profile">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" class="d-flex p-10 fs-14" title="Projects">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="d-flex p-10 fs-14" title="Courses">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html" class="d-flex p-10 fs-14" title="Friends">
+                        <i class="fa-solid fa-users fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html" class="d-flex p-10 fs-14" title="Files">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="d-flex p-10 fs-14" title="Plans">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="over-flow content w-full">
+            <header class="d-flex p-20">
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                </div>
+                <a href="login.html">
+                    <div class="icon">
+                        <span class="p-relative">
+                            <i class="fa-regular fa-bell fa-fw"></i>
+                        </span>
+                        <img src="image/profile.png" alt="">
+                    </div>
+                </a>
+            </header>
+            <h1>Settings</h1>    
+            <div class="settings-page m-10 d-block-mobile d-grid">
+                <div class="p-10 br-10 bg-white shadow">
+                    <h3 class="mb-5">Site Control</h3>
+                    <p class="fs-14 mb-20 c-gray">Control The Website If There Is Maintenance</p>
+                    <div class="d-flex align-center between-flex">
+                        <div>
+                            <span class="d-block mb-5">Website Control</span>
+                            <p class="fs-14 c-gray">Open/Close Website And Type The Reason</p>
+                        </div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <textarea class="close-message p-10 d-block w-full" placeholder="Close Message Content"></textarea>
+                </div>
+                <div class="general-info mb-mobile br-10 p-10 bg-white shadow">
+                    <h3 class="mb-5">General Info</h3>
+                    <p class="fs-14 c-gray pb-20">General Information About Your Account</p>
+                    <form action="">
+                        <div>
+                            <label class="d-block" for="f-name">Fitst Name</label>
+                            <input type="text" id="f-name" placeholder="First Name">
+                        </div>
+                        <div>
+                            <label class="d-block" for="l-name">Last Name</label>
+                            <input type="text" id="l-name" placeholder="Last Name">
+                        </div>
+                        <div>
+                            <label class="d-block" for="mail">Email</label>
+                            <input type="email" id="mail" placeholder="First Name">
+                            <input type="submit" value="Change">
+                        </div>
+                    </form>
+                </div>
+                <div class="security-info bg-white shadow br-10 mb-mobile p-10">
+                    <h3 class="mb-5">Security Info</h3>
+                    <p class="c-gray fs-14 pb-20">Security Information About Your Account</p>
+                    <div class="row align-center d-flex between-flex mb-20">
+                        <div class="info">
+                            <p class="mb-5">Password</p>
+                            <p class="c-gray fs-14">Last Change On 30/10/2024</p>
+                        </div>
+                        <a class="change" href="#">Change</a>
+                    </div>
+                    <div class="row d-flex align-center between-flex mb-20">
+                        <div class="info">
+                            <p class="mb-5">Two-Factor Authentication</p>
+                            <p class="c-gray fs-14">Enable/Disable The Feature</p>
+                        </div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="row last d-flex align-center between-flex mb-10">
+                        <div class="info">
+                            <p class="mb-5">Devices</p>
+                            <p class="c-gray fs-14">Check The Login Devices List</p>
+                        </div>
+                        <a class="device" href="#">Devices</a>
+                    </div>
+                </div>
+                <div class="social-info bg-white shadow br-10 mb-mobile p-10">
+                    <h3 class="mb-5">Social Info</h3>
+                    <p class="c-gray fs-14 pb-20">Social Media Information</p>
+                    <div class="p-relative">
+                        <i class="fa-brands fa-instagram"></i>
+                        <input class="mb-20" type="text" placeholder="Instagram Username">
+                    </div>
+                    <div class="p-relative">
+                        <i class="fa-brands fa-youtube"></i>
+                        <input class="mb-20" type="text" placeholder="Youtube Username">
+                    </div>
+                    <div class="p-relative">
+                        <i class="fa-brands fa-facebook"></i>
+                        <input class="mb-20" type="text" placeholder="Facebook Username">
+                    </div>
+                    <div class="p-relative">
+                        <i class="fa-brands fa-github"></i>
+                        <input type="text" placeholder="Github Username">
+                    </div>
+                </div>
+                <div class="widgets bg-white p-10 shadow mb-mobile br-10">
+                    <h3 class="mb-5">Widgets Control</h3>
+                    <p class="c-gray mb-12 fs-14">Show/Hide Widgets</p>
+                    <div class="control d-flex align-center">
+                        <input type="checkbox" id="one" checked>
+                        <label for="one">Quick Draft</label>
+                    </div>
+                    <div class="control d-flex align-center">
+                        <input type="checkbox" id="two" checked>
+                        <label for="two">Your Skills</label>
+                    </div>
+                    <div class="control d-flex align-center">
+                        <input type="checkbox" id="three">
+                        <label for="three">Tickets Statistics</label>
+                    </div>
+                    <div class="control d-flex align-center">
+                        <input type="checkbox" id="four" checked>
+                        <label for="four">Latest News</label>
+                    </div>
+                    <div class="control d-flex align-center">
+                        <input type="checkbox" id="five">
+                        <label for="five">Latest Tasks</label>
+                    </div>
+                    <div class="control d-flex align-center">
+                        <input type="checkbox" id="six"checked>
+                        <label for="six">Reminders</label>
+                    </div>
+                    <div class="control d-flex align-center">
+                        <input type="checkbox" id="seven" checked>
+                        <label for="seven">Latest Post</label>
+                    </div>
+                    <div class="control d-flex align-center">
+                        <input type="checkbox" id="last" checked>
+                        <label for="last">Social Media</label>
+                    </div>
+                </div>
+                <div class="backup shadow bg-white p-10 br-10 mb-mobile">
+                    <h3 class="mb-5">Backup Manager</h3>
+                    <p class="c-gray mb-12 fs-14">Control Backup Time and Location</p>
+                    <div class="date mb-12">
+                        <input type="radio" name="date" id="daily">
+                        <label for="daily">Daily</label>
+                    </div>
+                    <div class="date mb-12">
+                        <input type="radio" name="date" id="weekly" checked>
+                        <label for="weekly">Weekly</label>
+                    </div>
+                    <div class="date mb-12">
+                        <input type="radio" name="date" id="monthly">
+                        <label for="monthly">Monthly</label>
+                    </div>
+                    <div class="servers d-flex">
+                        <input type="radio" name="server" id="server1">
+                        <div class="server br-10 mb-10 w-full">    
+                            <label class="d-block p-20" for="server1">
+                                <i class="fa-solid fa-server"></i>
+                                <p class="fa-solid">sigma</p>
+                            </label>
+                        </div>
+                        <input type="radio" name="server" id="server2" checked>
+                        <div class="server br-10 mb-10 w-full">    
+                            <label class="d-block p-20" for="server2">
+                                <i class="fa-solid fa-server d-block"></i>
+                                <p class="fa-solid">khalil</p>
+                            </label>
+                        </div>
+                        <input type="radio" name="server" id="server3">
+                        <div class="server br-10 mb-10 w-full">    
+                            <label class="d-block p-20" for="server3">
+                                <i class="fa-solid fa-server d-block"></i>
+                                <p class="fa-solid">rowman</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+</body>
+</html>
